@@ -1,1 +1,5 @@
 reddit/
+test/
+sentencepiece/all_files.txt
+sentencepiece/m.model
+sentencepiece/m.vocab
