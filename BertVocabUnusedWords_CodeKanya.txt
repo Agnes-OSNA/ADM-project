@@ -27,11 +27,10 @@ def readWrite(filepath1, filepath2, filepath3):
                 word =sw.pop(0)
             bertList.append(word)
     # print(count1, count2, count3)
-    file1 = open('C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERTtesting\BERTVocabulary\Result.txt', 'w', encoding="utf8")
+    file1 = open('C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERT_MODEL_VOCABULARY\Result.txt', 'w', encoding="utf8")
     for x in bertList:
         x = x +"\n"
         file1.write(x)
-
 
 
 if __name__ == '__main__':
@@ -39,8 +38,8 @@ if __name__ == '__main__':
     f2 = input("Enter the filepath 2")
     f3 = input("Enter the filepath 3")
 
-    # f1 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERTtesting\BERTVocabulary\WikiWords\SingleUW.txt"
-    # f2 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERTtesting\BERTVocabulary\WikiWords\MultipleUW.txt"
-    # f3 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERTtesting\BERTVocabulary\Bert-base-uncased-vocab.txt"
+    # f1 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERT_MODEL_VOCABULARY\OneUncommonWord.txt"
+    # f2 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERT_MODEL_VOCABULARY\MultipleUncommonWords.txt"
+    # f3 = "C:\KANYAAAAAA\Spring_2020\COURSES\AdvancedDM\PROJECT\BERT\BERT_MODEL_VOCABULARY\bert-base-uncased-vocab.txt"
 
     readWrite(f1, f2, f3)
